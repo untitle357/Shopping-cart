@@ -1,0 +1,92 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  background: linear-gradient(90deg, #6d0088, #0212ec46);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.links a {
+  margin: 0 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.shoppingCart {
+  position: relative;
+}
+
+.shoppingCart span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.items {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #999;
+}
+
+.basket {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 60vh;
+  background: #502bf6;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 999999;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.shopItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #999;
+}
+
+.shopItem img {
+  height: 20vh;
+}
+
+.active {
+  display: block;
+}
